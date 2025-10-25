@@ -1,0 +1,151 @@
+/* ======== 0. GLOBAL RESET & VARIABLES ======== */
+/* This is a good practice to make your site look consistent */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define your colors and fonts in one place */
+:root {
+    --primary-color: #007BFF; /* A sample blue */
+    --secondary-color: #333; /* Dark text */
+    --light-color: #f4f4f4; /* Light grey background */
+    --white-color: #ffffff;
+    --main-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+    line-height: 1.6;
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* This is a helper class to center content */
+.container {
+    max-width: 1100px;
+    margin: 0 auto; /* Centers the content */
+    padding: 0 20px; /* Adds space on the sides */
+}
+
+/* ======== 1. HEADER & NAVBAR ======== */
+header {
+    background: var(--white-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between; /* Puts logo on left, links on right */
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    font-weight: 700;
+}
+
+/* This is the base style for buttons */
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* A darker blue for hover */
+}
+
+/* ======== 2. HERO SECTION ======== */
+.hero {
+    background: var(--light-color); /* Light background for contrast */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-large {
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+/* ======== 3. FEATURES SECTION ======== */
+.features {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between; /* Spreads the 3 cards out */
+    gap: 30px; /* Adds space between the cards */
+}
+
+.feature-card {
+    background: var(--white-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex: 1; /* Makes all cards share the space equally */
+}
+
+.feature-card img {
+    margin-bottom: 20px;
+    /* This uses a placeholder. Replace with your own image paths */
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* ======== 4. FOOTER ======== */
+footer {
+    background: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
